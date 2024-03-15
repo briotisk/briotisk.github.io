@@ -1,0 +1,125 @@
+:root {
+    --first-bg-color: black;
+    --second-bg-color: #1d1d1d;
+    --first-color: #FF8300;
+    --second-color: #954D00;
+    --third-color: #B35C00;
+
+    height: 100%;
+    width: 100%;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+body {
+    background-color: var(--first-bg-color);
+    color: white;
+    padding: 0px;
+    margin: 0;
+}
+
+#nav-bar {
+    display: flex;
+    margin: 0px;
+    padding: 30px 20px;
+    position: fixed;
+    width: 100%;
+    background-color: var(--first-bg-color);
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.section {
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    margin: 0px 20px;
+    letter-spacing: .1rem;
+    transition: .3s;
+}
+
+.section:hover {
+    transition: .3s;
+    color: var(--first-color);
+}
+
+#footer {
+
+}
+
+#sobre-mim {
+    background-color: var(--third-bg-color);
+}
+
+#tecnologias {
+
+}
+
+.tecnologia {
+
+}
+
+#projetos {
+    
+}
+
+.projeto {
+
+}
+
+#apresentacao {
+    margin-top: 100px;
+}
+
+#contato {
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.input-container {
+    padding: 30px 10px;
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--second-color);
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--first-bg-color);
+    width: 100%;
+    color: white;
+}
+
+input:focus {
+    border-bottom: 2px solid var(--third-color);
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: var(--second-color);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--third-color);
+    transition: .3s;
+}
