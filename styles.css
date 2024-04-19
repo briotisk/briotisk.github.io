@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 5em;
+}
+
 :root {
     --first-bg-color: black;
     --second-bg-color: #1d1d1d;
     --first-color: #FF8300;
     --second-color: #954D00;
     --third-color: #B35C00;
-
-    height: 100%;
-    width: 100%;
 }
 
 textarea:focus, input:focus {
@@ -48,19 +56,91 @@ body {
 }
 
 #footer {
+    display: flex;
+    margin: 0;
+    padding: 30px 20px;
+}
 
+#footer ul{
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    text-align: center; 
+}
+
+#footer li{
+    margin: 0; 
+    padding: 0px 30px;
 }
 
 #sobre-mim {
-    background-color: var(--third-bg-color);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #000000 0%, var(--second-bg-color) 100%);
+    margin: 0px 5vw;
+}
+
+#sobre-mim-img { 
+    margin: 0px 2vw;
+    text-align: center
+}
+
+#sobre-mim-img img{ 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sobre-mim-txt { 
+    margin: 0px 2vw;
+}
+
+#sobre-mim-txt p{ 
+    line-height: 1.5;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+#sobre-mim-txt h1{ 
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 3px;
 }
 
 #tecnologias {
+    margin: 60px 30px;
+}
 
+#tecnologias p{
+    font-size: larger;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 1em;
+}
+
+#lista-tecnologias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
 }
 
 .tecnologia {
+    margin: 0vh 5vw;
+    list-style: none;
+}
 
+.tecnologia button{
+    font-family: 'B612 Mono', monospace;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.tecnologia button:hover{
+    cursor: pointer;
 }
 
 #projetos {
@@ -68,11 +148,98 @@ body {
 }
 
 .projeto {
+    display: flex;
+    margin: 10vh 10vw;
+    background-color: var(--second-bg-color);
+    border-radius: 30px;
+    padding: 30px;
+    height: 40vh;
+}
 
+.projeto-descricao {
+    margin: 0px 20px;
+    font-family: 'B612 Mono', monospace;
+
+    overflow: auto;
+}
+
+.projeto-descricao a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.github-link {
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+.github-link:hover{
+    border: 1px var(--first-color) solid;
+    border-radius: 10px;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.projeto-descricao a:hover {
+    color: var(--first-color);
+    transition: .3s;
+}
+
+.projeto-descricao p {
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+.projeto-img {
+    margin: 0px 20px;
+}
+
+.projeto-img img{
+    height: 220px;
+    width: 220px;
 }
 
 #apresentacao {
-    margin-top: 100px;
+    overflow-wrap: break-word;
+    margin-top: 15vw;
+    margin-left: 20vw;
+    margin-right: 45vw;
+    height: 100vh;
+}
+
+#apresentacao p{
+    margin-top: 5vw;
+    font-size: 1.2em;
+}
+
+.nome::after{
+    width: 0%;
+}
+
+.ola {
+    letter-spacing: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(11);
+}
+
+.nome::before{
+    width: 0;
+}
+
+.nome{
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: typeNome 2s steps(23) forwards;
+    animation-delay: 2s;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #contato {
@@ -82,6 +249,14 @@ body {
     margin-right: auto;
 }
 
+#contato h2{
+    font-family: 'B612 Mono', monospace;
+    letter-spacing: 2px;
+}
+
+#contato p{
+    font-family: 'Courier New', Courier, monospace;
+}
 #contact-form {
     margin-top: 30px;
     margin-bottom: 40px;
@@ -122,4 +297,32 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: var(--third-color);
     transition: .3s;
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0%;
+        border-right: 6px white solid;
+    }
+    100% {
+        width: 100%;
+        border-right: 0;
+    }
+}
+
+@keyframes typeNome{
+    0% {
+        opacity: 1;
+        width: 0%;
+        border-right: 6px white solid;
+        
+    }
+    50% {
+        border-right: 4px white solid;
+    }
+    100% {
+        width: 100%;
+        border-right: 0;
+        opacity: 1;
+    }
 }

@@ -4,62 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Henrique Brioto | Meu Portifólio</title>
+    <script src="/src/contact.js"></script>
     <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
     <nav id="nav-bar">
         <a class="section" href="#sobre-mim">Sobre Mim</a>
         <a class="section" href="#tecnologias">Tecnologias</a>
         <a class="section" href="#projetos">Projetos</a>
         <a class="section" href="#contato">Contato</a>
     </nav>
+</head>
+<body>
     <div id="apresentacao">
-       <h1>Olá, sou </h1> 
-       <h1>Gabriel Henrique Brioto</h1> 
+       <h1 class="ola">Olá, eu sou </h1> 
+       <h1 class="meu-nome">Gabriel Henrique Brioto</h1> 
        <p>Este é meu portifílio. Atravé dele você pode me conhecer um pouco melhor, consultar alguns dos meus projetos e, se desejar, entar em contato comigo. Sinta-se à vontade!</p>
     </div>
     <div id="sobre-mim">
-        <p>Sou um apaixonado por computação cursando Engenharia de Computação na Universidade de São Paulo. Um entusiasta da web descentralizada, amante de projetos em sistemas embarcados e um eterno apaixonado pela busca do conhecimento.</p>
+        <div id="sobre-mim-img">
+            <img src="/img/Foto-Perfil.png" width="60%" height="60%">
+        </div>
+        <div id="sobre-mim-txt">
+            <h1>Quem Sou?</h1>
+            <p>Sou um apaixonado por computação cursando Engenharia de Computação na Universidade de São Paulo. Um entusiasta da web descentralizada, amante de projetos em sistemas embarcados e um eterno apaixonado pela busca do conhecimento.</p>
+        </div>
     </div>
     <div id="tecnologias">
         <p>As tecnologias com as quais estou habituado a trabalhar são:</p>
-        <ul>
-            <li class="tecnologia">C/C++</li>
-            <li class="tecnologia">Python</li>
-            <li class="tecnologia">Javascript</li>
-            <li class="tecnologia">Solidity</li>
-            <li class="tecnologia">Assembly</li>
+        <ul id="lista-tecnologias">
+            <li class="tecnologia"><button>C/C++</button></li>
+            <li class="tecnologia"><button>Python</button></li>
+            <li class="tecnologia"><button>Javascript</button></li>
+            <li class="tecnologia"><button>Solidity</button></li>
+            <li class="tecnologia"><button>Assembly</button></li>
         </ul>
+        <div>
+            <h2>Tecnologia</h2>
+            <p>Selecione uma tecnologia para obter mais detalhes</p>
+        </div>
     </div>
     <div id="projetos"> 
         <div class="projeto">
-            <a href="https://github.com/briotisk/Termo.git">Termo</a>
-            <p>Descrição do projeto</p>
+            <div class="projeto-img">
+                <a href="https://github.com/briotisk/Termo.git"><img src="/img/termo.jpg" width="100%" height="100%"/></a>
+            </div>
+            <div class="projeto-descricao">
+                <a class="titulo" href="https://github.com/briotisk/Termo.git">Termo</a>
+                <p>Termo é um jogo de palavras no qual o jogador deve acertar uma palavra dentro de um número de tentativas e com base em dicas no comportamento das letras da palavra digitada. Quando as letras aparecem na cor verde, além de existirem na palavra alvo, elas estão na posição correta. As amarelas sinalizam que as letras em questão compõem a palavra, porém, estão na posição errada. Já as que aparecem brancas, não fazem parte da palavra.</p>
+                <a class="github-link" href="https://github.com/briotisk/Termo.git">Visitar repositório</a>
+            </div>
         </div>
         <div class="projeto">
-            <a href="https://github.com/briotisk/TicketToken.git">Ticket Token</a>
-            <p>Descrição do projeto</p>
+            <div class="projeto-descricao">
+                <a class="titulo" href="https://github.com/briotisk/TicketToken.git">Ticket Token</a>
+                <p>Este projeto consiste em um sistema de tokenização de ingressos que conta .</p>
+                <a class="github-link" href="https://github.com/briotisk/TicketToken.git">Visitar repositório</a>
+            </div>
+            <div class="projeto-img">
+                <a href="https://github.com/briotisk/TicketToken.git"><img src="/img/generic-img.png" width="100%" height="100%"/>
+                </a>
+            </div>
         </div>
         <div class="projeto">
-            <a href="https://github.com/briotisk/SoftwareLicenseNFT.git">Software License</a>
-            <p>Descrição do projeto</p>
+            <div class="projeto-img">
+                <a href="https://github.com/briotisk/SoftwareLicenseNFT.git"><img src="/img/generic-img.png" width="100%" height="100%"/></a>
+            </div>
+            <div class="projeto-descricao">
+                <a class="titulo" href="https://github.com/briotisk/SoftwareLicenseNFT.git">Software License</a>
+                <p>Este projeto consiste em um sistema de licenciamento de software que utiliza um contrato inteligente (smart contract) escrito em Solidity, uma linguagem de programação para contratos inteligentes na blockchain Ethereum. O objetivo principal do contrato inteligente é facilitar a venda e distribuição de licenças de software de maneira descentralizada e segura.</p>
+                <a class="github-link" href="https://github.com/briotisk/SoftwareLicenseNFT.git">Visitar repositório</a>
+            </div>
+        </div>
+        <div class="projeto">
+            <div class="projeto-descricao"> 
+                <a class="titulo" href="https://github.com/Dauboau/clickTcp.git">Click TCP</a>
+                <p>Escrito em Python, utilizando o framework kivy, o ClickTCP é um jogo simples desenvolvido com o objetivo de colocar em prática alguns conceitos de redes de computadores ao implementar sockets para a comunicação usando protocolo TCP/IP. Nele, a janela é dividida em duas porções, cada uma com uma cor diferente e representando um jogador. Conforme um jogador acumula uma vantagem no número cliques em relação a seu adversário a sua porção da tela aumenta até que a tela toda seja ocupada e ele vença a partida.</p>
+                <a class="github-link" href="https://github.com/Dauboau/clickTcp.git">Visitar repositório</a>
+            </div>
+            <div class="projeto-img">
+                <a href="https://github.com/Dauboau/clickTcp.git"><img src="/img/click-tcp.png" width="100%" height="100%"/></a>
+            </div>
         </div>
     </div>
     <div id="contato">
         <h2>Enviar uma Mensagem</h2>
         <p>Utilize o formulário abaixo caso seja do seu interesse deixar alguma mensagem</p>
-        <form id="contact-form">
             <div class="input-container">
-                <input type="text" placeholder="Nome*"/>
+                <input id="name" type="text" placeholder="Nome*"/>
             </div>
             <div class="input-container">
-                <input type="email" placeholder="Email*"/>
+                <input id="email" type="email" placeholder="Email*"/>
             </div>
             <div class="input-container">
-                <input type="text" placeholder="Assunto"/>
+                <input id="subject" type="text" placeholder="Assunto"/>
             </div>
             <div class="input-container">
-                <input type="text" placeholder="Mensagem*"/>
+                <input id="content" type="text" placeholder="Mensagem*"/>
             </div>
             <div class="input-container">
                 <input type="submit" placeholder="Enviar*"/>
