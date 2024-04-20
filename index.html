@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Henrique Brioto | Meu Portifólio</title>
-    <script src="/src/contact.js"></script>
+    <script src="/src/nav-bar.js"></script>
     <link rel="stylesheet" href="styles.css"/>
     <nav id="nav-bar">
-        <a class="section" href="#sobre-mim">Sobre Mim</a>
-        <a class="section" href="#tecnologias">Tecnologias</a>
-        <a class="section" href="#projetos">Projetos</a>
-        <a class="section" href="#contato">Contato</a>
+        <div class="nav-bar-style">
+            <a class="section" href="#sobre-mim">Sobre Mim</a>
+            <a class="section" href="#tecnologias">Tecnologias</a>
+            <a class="section" href="#projetos">Projetos</a>
+            <a class="section" href="#contato">Contato</a>
+        </div>
     </nav>
 </head>
 <body>
-    <div id="apresentacao">
-       <h1 class="ola">Olá, eu sou </h1> 
-       <h1 class="meu-nome">Gabriel Henrique Brioto</h1> 
-       <p>Este é meu portifílio. Atravé dele você pode me conhecer um pouco melhor, consultar alguns dos meus projetos e, se desejar, entar em contato comigo. Sinta-se à vontade!</p>
+    <div id="apresentacao-container">
+        <div id="apresentacao">
+            <h1 class="ola">Olá, eu sou </h1> 
+            <h1 class="meu-nome">Gabriel Henrique Brioto</h1> 
+            <p>Este é meu portifílio. Atravé dele você pode me conhecer um pouco melhor, consultar alguns dos meus projetos e, se desejar, entar em contato comigo. Sinta-se à vontade!</p>
+         </div>
     </div>
     <div id="sobre-mim">
         <div id="sobre-mim-img">
@@ -85,34 +89,42 @@
             </div>
         </div>
     </div>
-    <div id="contato">
-        <h2>Enviar uma Mensagem</h2>
-        <p>Utilize o formulário abaixo caso seja do seu interesse deixar alguma mensagem</p>
-            <div class="input-container">
-                <input id="name" type="text" placeholder="Nome*"/>
-            </div>
-            <div class="input-container">
-                <input id="email" type="email" placeholder="Email*"/>
-            </div>
-            <div class="input-container">
-                <input id="subject" type="text" placeholder="Assunto"/>
-            </div>
-            <div class="input-container">
-                <input id="content" type="text" placeholder="Mensagem*"/>
-            </div>
-            <div class="input-container">
-                <input type="submit" placeholder="Enviar*"/>
-            </div>
-        </form>
+    <div id="contato-container">
+        <div id="contato">
+            <h2>Enviar uma Mensagem</h2>
+            <p>Utilize o formulário abaixo caso seja do seu interesse deixar alguma mensagem</p>
+                <div class="input-container">
+                    <input id="name" type="text" placeholder="Nome*"/>
+                </div>
+                <div class="input-container">
+                    <input id="email" type="email" placeholder="Email*"/>
+                </div>
+                <div class="input-container">
+                    <input id="subject" type="text" placeholder="Assunto"/>
+                </div>
+                <div class="input-container">
+                    <input id="content" type="text" placeholder="Mensagem*"/>
+                </div>
+                <div class="input-container">
+                    <input type="submit" placeholder="Enviar*"/>
+                </div>
+            </form>
+        </div>
     </div>
 
     <footer id="footer">
         <ul>
             <li>
-                <a href="https://github.com/briotisk">Github</a>
+                <div class="rede-social">
+                    <a href="https://github.com/briotisk"><img src="/img/github-logo.png"/></a>
+                    <a href="https://github.com/briotisk">Github</a>
+                </div>
             </li>            
             <li>
-                <a href="https://www.linkedin.com/in/gabriel-henrique-brioto-94a512255/">Linkedin</a>
+                <div class="rede-social">
+                    <a href="https://www.linkedin.com/in/gabriel-henrique-brioto-94a512255/"><img src="/img/linkedin-logo.png"/></a>
+                    <a href="https://www.linkedin.com/in/gabriel-henrique-brioto-94a512255/">Linkedin</a>
+                </div>
             </li>
         </ul>
     </footer>

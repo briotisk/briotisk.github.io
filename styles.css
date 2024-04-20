@@ -23,6 +23,7 @@ textarea:focus, input:focus {
 
 body {
     background-color: var(--first-bg-color);
+    background: linear-gradient(90deg, var(--first-bg-color) 30%, var(--first-color) 200%);
     color: white;
     padding: 0px;
     margin: 0;
@@ -31,13 +32,17 @@ body {
 #nav-bar {
     display: flex;
     margin: 0px;
-    padding: 30px 20px;
     position: fixed;
     width: 100%;
-    background-color: var(--first-bg-color);
     top: 0px;
     left: 0px;
     z-index: 1;
+}
+
+.nav-bar-style {
+    background-color: var(--first-bg-color);  
+    padding: 30px 20px;
+    width: 100%;  
 }
 
 .section {
@@ -56,6 +61,7 @@ body {
 }
 
 #footer {
+    background-color: var(--second-bg-color);
     display: flex;
     margin: 0;
     padding: 30px 20px;
@@ -72,6 +78,23 @@ body {
 #footer li{
     margin: 0; 
     padding: 0px 30px;
+}
+
+.rede-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.rede-social img{
+    width: 40px;
+    height: 40px;
+}
+.rede-social a{
+    font-size: 1.1em;
+    letter-spacing: 1.5;
+    padding: 5px 0px;
+    color: white;
+    text-decoration: none;
 }
 
 #sobre-mim {
@@ -205,6 +228,9 @@ body {
     width: 220px;
 }
 
+#apresentacao-container {
+}
+
 #apresentacao {
     overflow-wrap: break-word;
     margin-top: 15vw;
@@ -240,6 +266,11 @@ body {
     animation-delay: 2s;
     white-space: nowrap;
     overflow: hidden;
+}
+
+#contato-container {
+    padding-top: 30px;
+    background-color: var(--second-bg-color);
 }
 
 #contato {
