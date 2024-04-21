@@ -29,14 +29,14 @@ body {
 }
 
 #nav-bar {
-    display: flex; /* Utiliza o modelo de layout flexbox */
-    justify-content: flex-end; /* Alinha os itens à esquerda */
+    display: flex; 
+    justify-content: flex-end; 
     padding: 30px 20px;
     margin: 0px;
     position: fixed;
     width: 100%;
     top: 0px;
-    left: -50px;
+    left: -40px;
     z-index: 1;
 }
 
@@ -241,7 +241,14 @@ body {
     margin-top: 15vw;
     margin-left: 20vw;
     margin-right: 45vw;
-    height: 100vh;
+    height: 80vh;
+}
+
+#resumo {
+    animation: float 2s forwards;
+    animation-delay: 4s;
+    gap: 40px;
+    opacity: 0;
 }
 
 #apresentacao p{
@@ -249,7 +256,7 @@ body {
     font-size: 1.2em;
 }
 
-.nome::after{
+.meu-nome::after{
     width: 0%;
 }
 
@@ -281,11 +288,11 @@ body {
     border: 1px solid var(--second-color);
 }
 
-.nome::before{
+.meu-nome::before{
     width: 0;
 }
 
-.nome{
+.meu-nome{
     letter-spacing: 2px;
     opacity: 0;
     animation: typeNome 2s steps(23) forwards;
@@ -382,4 +389,14 @@ input[type="submit"]:hover {
         border-right: 0;
         opacity: 1;
     }
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(100%);
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
 }
