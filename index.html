@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Henrique Brioto | Meu Portifólio</title>
-    <script src="/src/nav-bar.js"></script>
     <link rel="stylesheet" href="styles.css"/>
-    <nav id="nav-bar">
-        <div class="nav-bar-style">
-            <a class="section" href="#sobre-mim">Sobre Mim</a>
-            <a class="section" href="#tecnologias">Tecnologias</a>
-            <a class="section" href="#projetos">Projetos</a>
-            <a class="section" href="#contato">Contato</a>
-        </div>
+    <nav id="nav-bar" class="nav-bar-style">
+        <a class="section" href="#sobre-mim">Sobre Mim</a>
+        <a class="section" href="#tecnologias">Tecnologias</a>
+        <a class="section" href="#projetos">Projetos</a>
+        <a class="section" href="#contato">Contato</a>
     </nav>
 </head>
 <body>
@@ -20,20 +17,23 @@
         <div id="apresentacao">
             <h1 class="ola">Olá, eu sou </h1> 
             <h1 class="meu-nome">Gabriel Henrique Brioto</h1> 
-            <p>Este é meu portifílio. Atravé dele você pode me conhecer um pouco melhor, consultar alguns dos meus projetos e, se desejar, entar em contato comigo. Sinta-se à vontade!</p>
-         </div>
+            <p>Este é meu portifílio. Através dele você pode me conhecer um pouco melhor, consultar alguns dos meus projetos e, se desejar, entar em contato comigo. Sinta-se à vontade!</p>
+            <div id="midias">
+                <a href="https://www.linkedin.com/in/gabriel-henrique-brioto-94a512255/">Linkedin</a>
+                <a href="https://github.com/briotisk">Github</a>
+            </div>
+        </div>
     </div>
     <div id="sobre-mim">
         <div id="sobre-mim-img">
             <img src="/img/Foto-Perfil.png" width="60%" height="60%">
         </div>
         <div id="sobre-mim-txt">
-            <h1>Quem Sou?</h1>
+            <h1>Quem sou eu?</h1>
             <p>Sou um apaixonado por computação cursando Engenharia de Computação na Universidade de São Paulo. Um entusiasta da web descentralizada, amante de projetos em sistemas embarcados e um eterno apaixonado pela busca do conhecimento.</p>
         </div>
     </div>
-    <div id="tecnologias">
-        <p>As tecnologias com as quais estou habituado a trabalhar são:</p>
+    <div class="tecnologias" id="tecnologias">
         <ul id="lista-tecnologias">
             <li class="tecnologia"><button>C/C++</button></li>
             <li class="tecnologia"><button>Python</button></li>
@@ -41,9 +41,9 @@
             <li class="tecnologia"><button>Solidity</button></li>
             <li class="tecnologia"><button>Assembly</button></li>
         </ul>
-        <div>
-            <h2>Tecnologia</h2>
-            <p>Selecione uma tecnologia para obter mais detalhes</p>
+        <div id="show-tech">
+            <h2 id="tech-title">Tecnologia</h2>
+            <p id="tech-description">Estas são as tecnologias com as quais estou habituado a trabalhar. Selecione uma delas para obter mais detalhes.</p>
         </div>
     </div>
     <div id="projetos"> 
@@ -128,5 +128,7 @@
             </li>
         </ul>
     </footer>
+    <script src="/src/nav-bar.js"></script>
+    <script src="/src/techs.js"></script>
 </body>
 </html>

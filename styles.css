@@ -22,7 +22,6 @@ textarea:focus, input:focus {
 }
 
 body {
-    background-color: var(--first-bg-color);
     background: linear-gradient(90deg, var(--first-bg-color) 30%, var(--first-color) 200%);
     color: white;
     padding: 0px;
@@ -30,19 +29,21 @@ body {
 }
 
 #nav-bar {
-    display: flex;
+    display: flex; /* Utiliza o modelo de layout flexbox */
+    justify-content: flex-end; /* Alinha os itens à esquerda */
+    padding: 30px 20px;
     margin: 0px;
     position: fixed;
     width: 100%;
     top: 0px;
-    left: 0px;
+    left: -50px;
     z-index: 1;
 }
 
 .nav-bar-style {
     background-color: var(--first-bg-color);  
-    padding: 30px 20px;
     width: 100%;  
+    padding: 30px 20px;
 }
 
 .section {
@@ -57,7 +58,7 @@ body {
 
 .section:hover {
     transition: .3s;
-    color: var(--first-color);
+    color: var(--third-color);
 }
 
 #footer {
@@ -133,13 +134,21 @@ body {
 }
 
 #tecnologias {
+    padding: 40px 30px;
     margin: 60px 30px;
+    border-radius: 30px;
+    background-color: var(--second-bg-color);
+    font-family: 'Quicksand', sans-serif;
 }
 
-#tecnologias p{
-    font-size: larger;
-    font-family: 'Quicksand', sans-serif;
-    margin-left: 1em;
+#show-tech {
+    padding: 20px 10vw;
+    height: 150px;
+}
+
+#tech-title {
+    color: var(--first-color);
+    font-weight: bolder;
 }
 
 #lista-tecnologias {
@@ -166,10 +175,6 @@ body {
     cursor: pointer;
 }
 
-#projetos {
-    
-}
-
 .projeto {
     display: flex;
     margin: 10vh 10vw;
@@ -182,7 +187,6 @@ body {
 .projeto-descricao {
     margin: 0px 20px;
     font-family: 'B612 Mono', monospace;
-
     overflow: auto;
 }
 
@@ -229,6 +233,7 @@ body {
 }
 
 #apresentacao-container {
+    font-family: 'B612 Mono', monospace;
 }
 
 #apresentacao {
@@ -253,6 +258,27 @@ body {
     white-space: nowrap;
     overflow: hidden;
     animation: typewriter 2s steps(11);
+}
+
+#midias {
+    margin-top: 50px;
+    padding-left: 5vw;
+}
+
+#midias a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: lighter;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    margin: 0px 20px;
+}
+
+#midias a:hover{
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
 }
 
 .nome::before{
@@ -304,7 +330,7 @@ input {
     border-bottom: 2px solid var(--second-color);
     padding: 10px;
     font-size: 1rem;
-    background-color: var(--first-bg-color);
+    background-color: var(--second-bg-color);
     width: 100%;
     color: white;
 }
