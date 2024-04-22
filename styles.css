@@ -1,3 +1,31 @@
+/*
+Comentários sobre o código
+
+### Seletores CSS:
+
+1. Tipo de seletores:
+   - Seletores de tipo: São usados para selecionar elementos HTML com base em seus tipos. Nesse código foram usados os segiuntes seletores de tipo: Seletores de tipos: "html", "body", "a", "p", "input", "textarea", "ul", "li" e "img".
+   - Seletores de classe: São dentificados pelo prefixo ".". Nesse código foram usados os segiuntes seletores de classes: ".nav-bar-style", ".section", ".ola", ".meu-nome", ".tecnologia", ".github-link", ".titulo" e ".rede-social".
+   - Seletores de ID: São identificados pelo prefixo "#", Nesse código foram usados os segiuntes seletores de ID: "#nav-bar", "#sobre-mim", "#apresentacao-container", "#resumo", "#midias", "#sobre-mim-img", "#sobre-mim-txt", "#tecnologias", "#show-tech", "#tech-title", "#lista-tecnologias", "#contato-container", "#contato", "#contact-form" e "#footer".
+   - Seletores de atributos: São identificados por um seletor e, entre colchetes, o atributo alvo e o valor desejado. Nesse código o único seletor de atributo utilizado foi: "input[type="submit"]".
+   - Seletores combinados: São identificados por um seletor de ID ou de classe seguido por um seletor de tipo.  Nesse código foram usados os segiuntes seletores combinados: "#apresentacao p" e ".projeto-descricao a"
+
+### Conceitos:
+
+1. Cascata:
+   - A cascata é evidente em todo o código, onde várias regras CSS se aplicam a um elemento, mas podem ser sobrepostas por regras mais específicas ou com maior especificidade.
+
+2. Especificidade:
+   - A especificidade é observada em seletores como `#nav-bar`, `#apresentacao-container`, `.projeto-descricao`, onde os seletores de ID e de classe têm uma especificidade maior do que os seletores de classe ou de tipo. Propriedades aplicadas a seletores mais específicos geralmente sobrescrevem propriedades aplicadas a seletores menos específicos.
+
+3. Herança:
+   - A herança é utilizada para aplicar estilos a elementos filhos com base em estilos aplicados aos elementos pais. Por exemplo, a propriedade `color: white;` aplicada ao `body` é herdada pelos elementos filhos, a menos que sejam explicitamente substituídos.
+
+### Comentários adicionais:
+- Há uso extensivo de variáveis CSS (`--first-bg-color`, `--first-color`, etc.), facilitando a manutenção e a coerência dos estilos.
+
+*/
+
 /*-------------------------------Importações-------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap');
