@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Henrique Brioto | Meu Portifólio</title>
+    <link rel="icon" type="image/png" href="/img/logo.png" />
     <link rel="stylesheet" href="styles.css"/>
     <nav id="nav-bar" class="nav-bar-style">
         <a class="section" href="#sobre-mim">Sobre Mim</a>
@@ -62,17 +63,17 @@
         <div class="projeto">
             <div class="projeto-descricao">
                 <a class="titulo" href="https://github.com/briotisk/TicketToken.git">Ticket Token</a>
-                <p>Este projeto consiste em um sistema de tokenização de ingressos que conta .</p>
+                <p>Este projeto consiste em um sistema de tokenização de ingressos que conta com um contrato inteligente [smart contract] e uma interface web simples por meio da qual o usuário pode comprar, resgatar e pedir reembolso do valor do ingresso.</p>
                 <a class="github-link" href="https://github.com/briotisk/TicketToken.git">Visitar repositório</a>
             </div>
             <div class="projeto-img">
-                <a href="https://github.com/briotisk/TicketToken.git"><img src="/img/generic-img.png" width="100%" height="100%"/>
+                <a href="https://github.com/briotisk/TicketToken.git"><img src="/img/ticket-token.png" width="100%" height="100%"/>
                 </a>
             </div>
         </div>
         <div class="projeto">
             <div class="projeto-img">
-                <a href="https://github.com/briotisk/SoftwareLicenseNFT.git"><img src="/img/generic-img.png" width="100%" height="100%"/></a>
+                <a href="https://github.com/briotisk/SoftwareLicenseNFT.git"><img src="/img/software-license.jpg" width="100%" height="100%"/></a>
             </div>
             <div class="projeto-descricao">
                 <a class="titulo" href="https://github.com/briotisk/SoftwareLicenseNFT.git">Software License</a>
@@ -91,21 +92,24 @@
             </div>
         </div>
     </div>
+    <!--Estou usando a API https://formsubmit.co/ para o envio do formulário-->
     <div id="contato-container">
         <div id="contato">
             <h2>Enviar uma Mensagem</h2>
             <p>Utilize o formulário abaixo caso seja do seu interesse deixar alguma mensagem</p>
+            <p>(Os campos marcados com "*" são obrigatórios)</p>
+            <form action="https://formsubmit.co/gabriel.h.brioto@gmail.com" method="POST">
                 <div class="input-container">
-                    <input id="name" type="text" placeholder="Nome*"/>
+                    <input id="name" autocomplete="off" type="text" placeholder="Nome*" required/>
                 </div>
                 <div class="input-container">
-                    <input id="email" type="email" placeholder="Email*"/>
+                    <input id="email" autocomplete="off" type="email" placeholder="Email*" required/>
                 </div>
                 <div class="input-container">
-                    <input id="subject" type="text" placeholder="Assunto"/>
+                    <input id="subject" autocomplete="off" type="text" placeholder="Assunto"/>
                 </div>
                 <div class="input-container">
-                    <input id="content" type="text" placeholder="Mensagem*"/>
+                    <textarea id="content"  autocomplete="off" type="text" placeholder="Escreva aqui sua mensagem*" required></textarea>
                 </div>
                 <div class="input-container">
                     <input type="submit" placeholder="Enviar*"/>
